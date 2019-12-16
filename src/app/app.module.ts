@@ -6,12 +6,12 @@ import { AppComponent } from './app.component';
 import {MatTableModule} from '@angular/material/table';
 import {MatButtonModule} from '@angular/material/button';
 
-import { ReadfileComponent } from './readfile/readfile.component';
+import { ReadFileComponent } from './read-file/read-file.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ReadfileComponent
+    ReadFileComponent
   ],
   imports: [
     BrowserModule,

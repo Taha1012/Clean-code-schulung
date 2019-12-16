@@ -1,0 +1,19 @@
+<h2>Bitte eine CSV File hochladen</h2>
+
+<input type="file" #csvReader name="Upload CSV" id="txtFileUpload" (change)="uploadListener($event)" accept=".csv"/>
+<table class="minimalistBlack" *ngIf="records.length > 0">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>City</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let record of records;let i = index;">
+        <td><span>{{record.name}}</span></td>
+        <td><span>{{record.age}}</span></td>
+        <td><span>{{record.city}}</span></td>
+    </tr>
+    </tbody>
+</table>

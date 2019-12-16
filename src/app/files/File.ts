@@ -1,6 +1,5 @@
 export class CSVRecord {
-    public id: any;
-    public Name: any;
-    public Age: any;
-    public City: any;
-  }
+    public name: any;
+    public age: any;
+    public city: any;
+}
